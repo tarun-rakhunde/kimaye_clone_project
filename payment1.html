@@ -1,0 +1,316 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Payment</title>
+    <link rel="stylesheet" href="footer.css" />
+
+    <style>
+      * {
+        font-family: sans-serif;
+      }
+      body {
+        margin: 0;
+      }
+      #nav1 {
+        background-color: #1e516c;
+        height: 55px;
+        color: white;
+        font-family: Helvetica, Arial, sans-serif;
+        margin-top: -15px;
+        width: 100%;
+        position: fixed;
+        text-align: center;
+      }
+      .p1 {
+        margin-top: 25px;
+      }
+      .header {
+        display: flex;
+        /* justify-content: space-between; */
+      }
+      .logo1 {
+        width: 200px;
+        margin-left: 200px;
+        cursor: pointer;
+        margin-top: 55px;
+      }
+      .iconprofile {
+        width: 50px;
+        margin-left: 550px;
+        margin-top: 10px;
+        cursor: pointer;
+        margin-top: 55px;
+      }
+      .input1 {
+        width: 400px;
+        height: 25px;
+        border: 2px solid;
+        margin-left: 40px;
+        margin-top: 20px;
+        margin-top: 70px;
+      }
+      .search {
+        width: 27px;
+        height: 31px;
+        margin-top: 20px;
+        cursor: pointer;
+        margin-top: 70px;
+      }
+      .search12 {
+        display: flex;
+        /* border: 1px solid red; */
+      }
+      .icon {
+        display: flex;
+        /* border: 1px solid red; */
+      }
+      .logo2 {
+        width: 40px;
+        /* margin-top: 5px; */
+        margin-top: 55px;
+      }
+      .head2 {
+        /* border: 1px solid red; */
+        /* height: 30px; */
+        width: 800px;
+        margin: auto;
+        display: flex;
+        font-family: sans-serif;
+        justify-content: space-evenly;
+        margin-top: 20px;
+        font-size: 16px;
+      }
+      .secondp4,
+      .secondp1 {
+        color: black;
+        font-weight: bold;
+      }
+      .secondp1:hover {
+        background-color: black;
+        color: white;
+      }
+      .secondp4:hover {
+        background-color: black;
+        color: white;
+      }
+      .secondp2,
+      .secondp3,
+      .secondp4,
+      .secondp1 {
+        /* border: 1px solid; */
+        padding: 10px;
+        /* height: 50px; */
+      }
+      .secondp2:hover {
+        background-color: black;
+        color: white;
+        cursor: pointer;
+      }
+      .secondp3 {
+        background-color: black;
+        color: white;
+        width: 150px;
+        height: 20px;
+        text-align: center;
+      }
+
+      .secondp2,
+      .secondp3 {
+        /* border: 1px solid red; */
+        font-weight: bold;
+      }
+      .myacc {
+        /* line-height: px; */
+        border-top: 2px solid #1e516c;
+        border-bottom: 2px solid #1e516c;
+        height: 150px;
+        width: 100%;
+        margin: auto;
+        text-align: center;
+        font-family: sans-serif;
+        color: #1e516c;
+        cursor: pointer;
+      }
+      .myacc > h2 {
+        font-size: 24px;
+        letter-spacing: 3px;
+        line-height: 28px;
+        font-weight: 700;
+        margin-top: 35px;
+      }
+      .myacc > h4 {
+        font-size: 14px;
+        line-height: 20px;
+        font-weight: 400;
+      }
+      .Mdiv {
+        border: 1px solid rgba(164, 216, 205, 0.589);
+        width: 40%;
+        margin: auto;
+        margin-top: 40px;
+        /* height: 400px;        */
+        box-shadow: rgba(0, 0, 0, 0.09) 0px 2px 1px,
+          rgba(0, 0, 0, 0.09) 0px 4px 2px, rgba(0, 0, 0, 0.09) 0px 8px 4px,
+          rgba(0, 0, 0, 0.09) 0px 16px 8px, rgba(0, 0, 0, 0.09) 0px 32px 16px;
+        padding: 20px;
+        margin-bottom: 50px;
+      }
+      .h2 {
+        /* border: 1px solid red; */
+        width: 400px;
+        margin: auto;
+        line-height: 26px;
+        color: greenyellow;
+        font-style: italic;
+      }
+      .inpt {
+        width: 100%;
+        height: 60px;
+        margin: 10px;
+      }
+      .inpt1,
+      #inpt1 {
+        width: 35%;
+        height: 60px;
+        margin: 10px;
+      }
+      .inpt2 {
+        width: 24%;
+        height: 60px;
+        margin: 10px;
+      }
+      button {
+        width: 60%;
+        height: 50px;
+        border-radius: 10px;
+        background-color: green;
+        color: white;
+      }
+      button:hover{
+          background-color: black;
+          font-size: 20px;
+      }
+      #lastpage{
+            width: 100%;
+            height: 270px;
+            /* border: 3px solid red; */
+            background-color: #7d9c5b;
+        }
+     .followus{
+         display: flex;
+         justify-content: space-between;
+         margin-left: 140px;
+         /* margin-top: 20px; */
+         padding-top: 20px;
+         margin-right: 300px;
+         line-height: 5px;
+         font-weight: bold;
+         margin-bottom: 20px;
+         text-decoration: none;
+         /* text-decoration: none; */
+     }
+     .underline{
+         width: 80%;
+         height: 0.1px;
+         border: 0.2px solid gray;
+         margin: auto;
+         margin-top: 20px;
+     }
+     .followus>div>a>p:hover{
+         color: red;
+     }
+     .followus>div>a>p{
+         /* color: red; */
+         /* text-decoration: none; */
+         /* text-decoration: underline; */
+         color: black;
+         /* text-decoration-skip: none; */
+         text-decoration: none;
+     }
+     .faq{
+       text-decoration: none;
+     }
+    </style>
+  </head>
+  <body>
+
+        <h2 class="h2">Enter Your payment details</h2>
+        <div class="Mdiv">
+        <input type="number" class="inpt" id="inp" placeholder="Card Number" /><input
+            type="text"
+            class="inpt"
+            placeholder="State address"
+        /><input
+            type="text"
+            class="inpt"
+            placeholder="Apt, Suite, Unit, etc, Optional"
+        /><input type="text" class="inpt" id="inp1" placeholder="CVV" />
+        <select name="" id="inpt1">
+            <option value="">Address</option>
+            <option value="">Mumbai</option>
+            <option value="">Goa</option>
+            <option value="">Bihar</option>
+        </select>
+        <input type="text" class="inpt2" placeholder="City" />
+        <input type="text" class="inpt2" placeholder="Zip" />
+        <button>Submit</button>
+
+    </div
+    >
+
+    <div id="lastpage">
+        <div class="followus">
+            <div >
+               <a class="faq" href=""> <p>FAQ's</p></a>
+               <a class="faq" href=""> <p>Contact Us</p></a>
+                <a class="faq" href=""><p>Shipping & Return Policy</p></a>
+                <a class="faq" href=""><p>Shipping & Return Policy</p></a>
+               <a class="faq" href=""> <p>Terms & Conditions</p></a>
+               <a class="faq" href=""> <p>Privacy Policy</p></a>
+            </div>
+            <div>
+                <h4>Follow us on</h4>
+                <a class="sign" href="facebook.com"> <i class="fab fa-facebook-square fa-2x"></i></a>
+            <i class="fab fa-twitter-square fa-2x"></i>
+            <i class="fab fa-instagram-square fa-2x"></i>
+            <i class="fab fa-youtube-square fa-2x"></i>
+
+            </div>
+        </div>
+        <div class="underline">
+
+        </div>
+        <div>
+            <div class="followus">
+                <div >
+                   <p>copyright©2020. All Rights Reserved</p>
+                </div>
+                <div>
+                <img 
+                width="60%"
+               height="50px"
+                src="https://cdn.shopify.com/s/files/1/0449/5225/6667/files/ting.png?v=1599565040" alt="">
+                </div>
+        </div>
+</div>
+  </body>
+</html>
+<!-- class="inpt1"  -->
+<script>
+    document.querySelector("button").addEventListener("click", myfun)
+
+    function myfun(){
+        // console.log("object");
+        var cn = document.querySelector("#inp").value;
+        var inp1 = document.querySelector("#inp1").value;
+        if(cn == 123456789 && inp1 == 799){
+            alert("Order Placed Sucessfully")
+            window.location.href="mainpage.html"
+        }else{
+            alert("Card Number Or CVV Entered  Wrong")
+        }
+    }
+</script>

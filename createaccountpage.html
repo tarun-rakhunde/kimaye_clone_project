@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+       body{
+        background-image: url(https://cdn.shopify.com/s/files/1/0449/5225/6667/files/2I8A6078_570x.jpg?v=1631516874);
+        background-size: 100%;
+     
+      }
+          #containercreate {
+        width: 24%;
+        height: 630px;
+        /* border: 1px solid black; */
+        box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+         background-color: white;
+        
+      }
+      #create1 {
+        display: flex;
+        width: 100%;
+        height: 80px;
+        /* border: 1px solid red; */
+        justify-content: space-around;
+        background-color: black;
+        color: white;
+      }
+      .ptag1 {
+        padding-top: 20px;
+        text-decoration: none;
+        color: white;
+      }
+      #createA > div {
+        margin-top: 25px;
+        margin-bottom: 10px;
+        padding-left: 10px;
+      }
+      .input1 {
+        margin-left: 10px;
+        font-size: 20px;
+      }
+      .input2 {
+        margin-left: 10px;
+        font-size: 20px;
+      }
+      #facebook1 {
+        width: 96%;
+        height: 30px;
+        border: 1px solid blue;
+        margin-top: 10px;
+        /* text-align: center; */
+        padding-bottom: 15px;
+        padding-left: 10px;
+        background-color: #4867aa;
+        color: white;
+      }
+      #googleA {
+        width: 96%;
+        height: 30px;
+        border: 1px solid red;
+        margin-top: 10px;
+        /* text-align: center; */
+        padding-bottom: 15px;
+        padding-left: 10px;
+        /* text-decoration: none; */
+        background-color: #eb2d06;
+        color: white;
+      }
+      .createlogin {
+          margin-top: 30px;
+        padding: 7px 90px;
+        margin-left: 10px;
+        background-color: white;
+        border: 0px;
+        border: 1px solid black;
+      }
+      .createlogin:hover {
+        background-color: black;
+        color: white;
+      }
+      #googleA1 {
+        text-decoration: none;
+        color: white;
+      }
+    </style>
+</head>
+<body>
+    
+    <div id="containercreate">
+       
+        <div id="create1">
+          <h1>Create Account</h1>
+          <a class="ptag1" href="mainpage.html"><p>Close</p></a>
+        </div>
+        <form id="createA">
+            <div id="facebook1">
+                <p>Sign in with Facebook</p>
+              </div>
+              <div id="googleA">
+                <a id="googleA1" href=""> <p>Sign in with Facebook</p></a>
+              </div>
+          <div>First Name </div>
+          <input id="name" class="input1" type="text" />
+          <div>Last Name</div>
+          <input id="last" class="input2" type="text" />
+          <div>Email Add </div>
+          <input id="emailAdd" class="input1" type="text" />
+          <div>Password</div>
+          <input id="pass" class="input2" type="password" />
+         <a href="signin.html"> <input class="createlogin" type="submit" value="REGISTER"/></a>
+          </form>
+    </div>
+</body>
+</html>
+<script>
+  document.querySelector("#createA").addEventListener("submit",createAccount)
+var arr=JSON.parse(localStorage.getItem("myLocal"))||[]
+
+  function createAccount(event){
+    event.preventDefault();
+    
+
+  var name=document.querySelector("#name").value
+  var last=document.querySelector("#last").value
+  var emailAdd=document.querySelector("#emailAdd").value
+  var pass=document.querySelector("#pass").value
+console.log(name,last,emailAdd,pass)
+
+  var userData={
+    nameuser:name,
+    lastname:last,
+    email:emailAdd,
+    pass:pass,
+  }
+
+  // console.log(dataObj)
+  arr.push(userData)
+localStorage.setItem("myLocal",JSON.stringify(arr))
+
+  }
+
+
+
+</script>

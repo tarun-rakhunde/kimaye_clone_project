@@ -1,0 +1,492 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <script src="https://kit.fontawesome.com/db1e80451c.js" crossorigin="anonymous"></script>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      * {
+        box-sizing: border-box;
+      }
+
+      /* Container needed to position the overlay. Adjust the width as needed */
+      .container {
+        position: relative;
+        width: 50%;
+        max-width: 300px;
+      }
+
+      /* Make the image to responsive */
+      .image {
+        display: block;
+        width: 100%;
+        height: auto;
+      }
+
+      /* The overlay effect - lays on top of the container and over the image */
+      .overlay {
+        position: absolute;
+        bottom: 0;
+        background: rgb(0, 0, 0);
+        background: rgba(0, 0, 0, 0.5); /* Black see-through */
+        color: #f1f1f1;
+        width: 100%;
+        transition: 0.5s ease;
+        opacity: 0;
+        color: white;
+        font-size: 10px;
+        padding: 10px;
+        text-align: center;
+        background-color: green;
+        border-radius: 10px;
+      }
+      #addcart {
+        width: 100%;
+        height: 2300px;
+        /* border: 1px solid red; */
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        background-color: #eeeee9;
+      }
+      #addcart > div {
+        width: 20%;
+        height: 270px;
+        /* border: 1px solid black; */
+        margin: 20px;
+      }
+      #addcart>div>img{
+        transition: transform 0.2s;
+      
+      }
+      #addcart>div>img:hover{
+      
+        transform: scale(1.2);
+      }
+
+      /* When you mouse over the container, fade in the overlay title */
+      .container:hover .overlay {
+        opacity: 1;
+      }
+      #add12 {
+        border-radius: 20px;
+
+      }
+      .cocunut {
+        text-align: center;
+        font-style: italic;
+        color: #272727;
+        font-size: 20px;
+      }
+      .h2 {
+        text-align: center;
+        color: #ee2d18;
+        font-style: italic;
+        line-height: 10px;
+      }
+      .addtocart1{
+        text-decoration: none;
+        color: white;
+        /* border-radius: 20px; */
+      }
+      img{
+        border-radius: 15px;
+      }
+      #div1 {
+        background-color: #437111;
+        text-align: center;
+        padding: 10px;
+        color: white;
+      }
+      #navbarmain{
+            width: 100%;
+            height: 50px;
+            /* border: 1px solid red; */
+            display: flex;
+            justify-content: space-evenly;
+            background-color: #eeeeea;
+            
+        }
+        #navbarmain>div{
+        padding-top: 15px;
+        }
+        .growtag{
+            padding-top: 15px;
+            color: black;
+            text-decoration: none;
+        }
+        #navbarmain>div:nth-child(3){
+            color: #eb2d06;
+            font-size: 25px;
+            font-style: oblique;
+            padding-top: 10px;
+            font-weight: bold;
+        }
+        .searchtag{
+            padding-top: 15px;
+            color: black;
+            text-decoration: none;
+        }
+        .contacttag{
+            padding-top: 15px;
+            color: black;
+            text-decoration: none;
+        }
+        #shop{
+            border: 0px;
+            background-color: transparent;
+        }
+        #lastpage{
+            width: 100%;
+            height: 270px;
+            /* border: 3px solid red; */
+            background-color: #7d9c5b;
+        }
+     .followus{
+         display: flex;
+         justify-content: space-between;
+         margin-left: 140px;
+         /* margin-top: 20px; */
+         padding-top: 20px;
+         margin-right: 300px;
+         line-height: 5px;
+         font-weight: bold;
+         margin-bottom: 20px;
+         text-decoration: none;
+         /* text-decoration: none; */
+     }
+     .underline{
+         width: 80%;
+         height: 0.1px;
+         border: 0.2px solid gray;
+         margin: auto;
+         margin-top: 20px;
+     }
+     .followus>div>a>p:hover{
+         color: red;
+     }
+     .followus>div>a>p{
+         /* color: red; */
+         /* text-decoration: none; */
+         /* text-decoration: underline; */
+         color: black;
+         /* text-decoration-skip: none; */
+         text-decoration: none;
+     }
+     .faq{
+       text-decoration: none;
+     }
+     #frontnav {
+        display: flex;
+        justify-content: center;
+        background-color: #efefea;
+      }
+      #frontnav > a > p {
+        margin-left: 20px;
+        /* text-decoration: none; */
+        color: black;
+        font-family: sans-serif;
+      }
+      .all {
+        text-decoration: none;
+      }
+      #frontnav > a > p:hover {
+        text-decoration: underline;
+      }
+      #cont {
+        display: flex;
+        width: 100%;
+        /* height: 2500px; */
+        flex-wrap: wrap;
+        
+        /* border: 1px solid red; */
+        justify-content: space-evenly;
+        background-color: #eeeeea;
+
+      }
+      #cont>div>img{
+          width: 100%;
+          height: 300px;
+          border: 1px solid black;
+          transition: transform 0.2s;
+        
+      }
+      #cont>div>img:hover{
+      
+      transform: scale(1.2);
+    }
+    #cont>div>button{
+            padding: 10px;
+           margin-left: 130px;
+           /* background-color: green; */
+         color: black;
+         /* transform: scale(1.2); */
+         /* border: 0px; */
+         border-radius: 10px;
+         margin-bottom: 40px;
+         /* align-items: center; */
+    }
+    #cont>div>button:hover{
+         background-color: green;
+         color: white;
+         transform: scale(1.2);
+         border: 0px;
+         border-radius: 10px;
+    }
+#cont>div>h2{
+  /* color: #eb2d06; */
+  text-align: center;
+}
+#cont>div>p{
+  color: #eb2d06;
+font-style: normal;
+font-weight: bold;
+font-size: 20px;
+ 
+  text-align: center;
+}
+#homediv {
+        background-color: #efefea;
+        display: flex;
+        justify-content: space-between;
+        /* margin-left: 150px;
+        margin-right: 150px; */
+       
+        /* width: 100%; */
+      }
+      .all{
+          text-decoration: none;
+          font-weight: bold;
+      }
+ 
+
+      
+    </style>
+  </head>
+  <body>
+    <div id="div1">Currently available in Mumbai | Same day delivery</div>
+    <div id="frontnav">
+      <a class="all" href="freshcuts.html"> <p>All Friuts</p></a>
+      <a class="all" href="freshcuts.html"> <p>Fresh Cuts</p></a>
+      <a class="all" href=""> <p>Fruit Combos</p></a>
+      <a class="all" href=""> <p>Gift By Kimaye</p></a>
+    </div>
+    <div id="navbarmain">
+      <div>
+          <select name="" id="shop">
+              <option value="">Shop U Want</option>
+              <option value="">FRESH CUTS</option>
+              <option value="">All Fruits</option>
+              <option value="">GIFTS</option>
+              <option value="">BUYING</option>
+          </select>
+      </div>
+      <div>
+          <select name="" id="shop">
+              <option value="">OUR STORY WHY</option>
+              <option value="">WHY KIMAYE</option>
+              <option value="">TRACEABILITY</option>
+              <option value="">GIFTS BY KIMAYE</option>
+              <option value="">COMMUNITY BUYING</option>
+          </select>
+
+      </div>
+      <div>Kimaye</div>
+     <a class="growtag" href=""> <div>Grow</div></a>
+      
+     <a class="searchtag" href=""> <div>Search</div></a>
+          <a class="contacttag" href="signin.html"><div>contact</div></a>
+      <div>Add Cart</div>
+  </div>
+        
+  
+    </div> 
+    <div id="homediv">
+      <a class="all" href="mainpage.html"> <p>Home</p></a>
+      <p>Showing 1-12 of 33 results</p>
+    </div>
+  <div class="sort">
+        <select  name="" id="priceSort" onchange="handlePriceSort()">
+          <option value="">SORT BY PRICE</option>
+          <option value="low">Low to High</option>
+          <option value="high">High to Low</option>
+        </select>
+  
+  
+        <select  name="" id="nameSort" onchange="handleNameSort()">
+          <option value="">SORT BY NAME</option>
+          <option value="asc">Ascending</option>
+          <option value="dsc">Descending</option>
+        </select>
+  
+        <button class="countbutton"> </button>
+        <button class="cartcount"><a href="payment1.html">Add to Cart</a></button> 
+      </div>
+    
+    <div id="cont"></div>
+    <div id="lastpage">
+      <div class="followus">
+          <div >
+             <a class="faq" href=""> <p>FAQ's</p></a>
+             <a class="faq" href=""> <p>Contact Us</p></a>
+              <a class="faq" href=""><p>Shipping & Return Policy</p></a>
+              <a class="faq" href=""><p>Shipping & Return Policy</p></a>
+             <a class="faq" href=""> <p>Terms & Conditions</p></a>
+             <a class="faq" href=""> <p>Privacy Policy</p></a>
+          </div>
+          <div>
+              <h4>Follow us on</h4>
+              <a class="sign" href="facebook.com"> <i class="fab fa-facebook-square fa-2x"></i></a>
+          <i class="fab fa-twitter-square fa-2x"></i>
+          <i class="fab fa-instagram-square fa-2x"></i>
+          <i class="fab fa-youtube-square fa-2x"></i>
+
+          </div>
+      </div>
+      <div class="underline">
+
+      </div>
+      <div>
+          <div class="followus">
+              <div >
+                 <p>copyright©2020. All Rights Reserved</p>
+              </div>
+              <div>
+              <img 
+              width="60%"
+             height="50px"
+              src="https://cdn.shopify.com/s/files/1/0449/5225/6667/files/ting.png?v=1599565040" alt="">
+              </div>
+      </div>
+</div>
+
+  </body>
+</html>
+<script>
+  var products = JSON.parse(localStorage.getItem("shoppingItems"));
+  var cart =JSON.parse(localStorage.getItem("shoppingItems"))||[]
+  
+  products.map(function (elem,index) {
+    var div = document.createElement("div");
+    var img = document.createElement("img");
+    img.setAttribute("src", elem.image);
+
+    var h2 = document.createElement("h2");
+    h2.textContent = elem.name;
+
+    var price = document.createElement("p");
+    price.textContent = elem.price;
+
+    var button = document.createElement("button");
+    button.textContent = "add to cart";
+
+    var p=document.createElement("button")
+    p.textContent="remove"
+
+    p.addEventListener("click",function(){
+        deleteFn(index)
+    })
+  
+    button.addEventListener("click", function () {
+      console.log(elem);
+      addToCart(elem)
+    });
+
+    div.append(img, h2, price, button,p);
+    document.querySelector("#cont").append(div);
+  });
+
+  function addToCart(elem){
+      console.log(elem)
+  }
+  
+  // function deleteFn(index){
+  //   // console.log(elem)
+  //   cart.splice(index,1)
+  //   localStorage.setItem("shoppingItems",JSON.stringify(cart))
+    
+
+  // }
+  var slideIndex = 1;
+showSlides(slideIndex);
+
+// Next/previous controls
+function plusSlides(n) {
+  showSlides(slideIndex += n);
+}
+
+// Thumbnail image controls
+function currentSlide(n) {
+  showSlides(slideIndex = n);
+}
+
+function showSlides(n) {
+  var i;
+  var slides = document.getElementsByClassName("mySlides");
+  var dots = document.getElementsByClassName("dot");
+  if (n > slides.length) {slideIndex = 1}
+  if (n < 1) {slideIndex = slides.length}
+  for (i = 0; i < slides.length; i++) {
+      slides[i].style.display = "none";
+  }
+  for (i = 0; i < dots.length; i++) {
+      dots[i].className = dots[i].className.replace(" active", "");
+  }
+  slides[slideIndex-1].style.display = "block";
+  dots[slideIndex-1].className += " active";
+}
+
+
+
+
+
+
+
+
+
+    var products = JSON.parse(localStorage.getItem("shoppingItems"));
+    var cart = JSON.parse(localStorage.getItem("cartItems")) || [];
+    console.log(cart.length);
+    document.querySelector("button").textContent = cart.length;
+    displayItem(products);
+  
+    function handlePriceSort() {
+      var selected = document.querySelector("#priceSort").value;
+      console.log(selected);
+      if (selected == "high") {
+        products.sort(function (a, b) {
+          return Number(b.price) - Number(a.price);
+        });
+      }
+      if (selected == "low") {
+        products.sort(function (a, b) {
+          return Number(a.price) - Number(b.price);
+        });
+      }
+      //console.log(products);
+      displayItem(products);
+    }
+  
+    function handleNameSort() {
+      var selected = document.querySelector("#nameSort").value;
+      console.log(selected);
+  
+      if (selected == "asc") {
+        products.sort(function (a, b) {
+          if (a.name > b.name) return 1;
+          if (a.name < b.name) return -1;
+          return 0;
+        });
+      }
+      if (selected == "dsc") {
+        products.sort(function (a, b) {
+          if (a.name > b.name) return -1;
+          if (a.name < b.name) return 1;
+          return 0;
+        });
+      }
+      displayItem(products);
+    }
+</script>

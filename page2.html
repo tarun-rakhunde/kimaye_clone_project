@@ -1,0 +1,563 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <script src="https://kit.fontawesome.com/db1e80451c.js" crossorigin="anonymous"></script>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      #frontnav {
+        display: flex;
+        justify-content: center;
+        background-color: #efefea;
+      }
+      #frontnav > a > p {
+        margin-left: 20px;
+        /* text-decoration: none; */
+        color: black;
+        font-family: sans-serif;
+      }
+      .all {
+        text-decoration: none;
+      }
+      #frontnav > a > p:hover {
+        text-decoration: underline;
+      }
+      #div1 {
+        background-color: #437111;
+        text-align: center;
+        padding: 10px;
+        color: white;
+      }
+      #homediv {
+        background-color: #efefea;
+        display: flex;
+        justify-content: space-between;
+        /* margin-left: 150px;
+        margin-right: 150px; */
+       
+        /* width: 100%; */
+      }
+      #allfruits {
+        width: 100%;
+        height: 2600px;
+        /* border: 2px solid black; */
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        background-color: #efefea;
+      }
+      #allfruits > div {
+        width: 25%;
+        height: 270px;
+        /* border: 1px solid green; */
+        margin: 20px;
+        transition: transform 0.2s;
+      }
+      .textalign1 {
+        text-align: center;
+        line-height: 15px;
+      }
+      h2 {
+        color: #d24634;
+      }
+      img{
+          border-radius: 25px;
+      }
+      #allfruits > div >img:hover{
+        transform: scale(1.1);
+
+      }
+      #page21{
+        width: 100%;
+        height: 500px;
+        border: 1px solid black;
+        display: flex;
+        flex-wrap: wrap;
+      }
+      #page21>div{
+        width: 23%;
+        height: 350px;
+        /* border: 1px solid green; */
+        margin: 10px;
+        /* margin-right: 10px; */
+        margin-top: 35px;
+        transition: transform 0.2s;
+      }
+      #page21>div>img:hover{
+        transform: scale(1.1);
+      }
+      #lastpage{
+            width: 100%;
+            height: 270px;
+            /* border: 3px solid red; */
+            background-color: #7d9c5b;
+        }
+     .followus{
+         display: flex;
+         justify-content: space-between;
+         margin-left: 140px;
+         /* margin-top: 20px; */
+         padding-top: 20px;
+         margin-right: 300px;
+         line-height: 5px;
+         font-weight: bold;
+         margin-bottom: 20px;
+         text-decoration: none;
+         /* text-decoration: none; */
+     }
+     .underline{
+         width: 80%;
+         height: 0.1px;
+         border: 0.2px solid gray;
+         margin: auto;
+         margin-top: 20px;
+     }
+     .followus>div>a>p:hover{
+         color: red;
+     }
+     .followus>div>a>p{
+         /* color: red; */
+         /* text-decoration: none; */
+         /* text-decoration: underline; */
+         color: black;
+         /* text-decoration-skip: none; */
+         text-decoration: none;
+     }
+     #navbarmain{
+            width: 100%;
+            height: 50px;
+            /* border: 1px solid red; */
+            display: flex;
+            justify-content: space-evenly;
+            background-color: #eeeeea;
+            
+        }
+        #navbarmain>div{
+        padding-top: 15px;
+        }
+        .growtag{
+            padding-top: 15px;
+            color: black;
+            text-decoration: none;
+        }
+        #navbarmain>div:nth-child(3){
+            color: #eb2d06;
+            font-size: 25px;
+            font-style: oblique;
+            padding-top: 10px;
+            font-weight: bold;
+        }
+        .searchtag{
+            padding-top: 15px;
+            color: black;
+            text-decoration: none;
+        }
+        .contacttag{
+            padding-top: 15px;
+            color: black;
+            text-decoration: none;
+        }
+        #shop{
+            border: 0px;
+            background-color: transparent;
+        }
+        .faq{
+       text-decoration: none;
+     }
+    </style>
+  </head>
+  <body>
+    <div id="div1">Currently available in Mumbai | Same day delivery</div>
+   
+    <div id="frontnav">
+      <a class="all" href="freshcuts.html"> <p>All Friuts</p></a>
+      <a class="all" href="freshcuts.html"> <p>Fresh Cuts</p></a>
+      <a class="all" href=""> <p>Fruit Combos</p></a>
+      <a class="all" href=""> <p>Gift By Kimaye</p></a>
+    </div>
+    <div id="navbarmain">
+      <div>
+          <select name="" id="shop">
+              <option value="">Shop U Want</option>
+              <option value="">FRESH CUTS</option>
+              <option value="">All Fruits</option>
+              <option value="">GIFTS</option>
+              <option value="">BUYING</option>
+          </select>
+      </div>
+      <div>
+          <select name="" id="shop">
+              <option value="">OUR STORY WHY</option>
+              <option value="">WHY KIMAYE</option>
+              <option value="">TRACEABILITY</option>
+              <option value="">GIFTS BY KIMAYE</option>
+              <option value="">COMMUNITY BUYING</option>
+          </select>
+
+      </div>
+      <div>Kimaye</div>
+     <a class="growtag" href=""> <div>Grow</div></a>
+      
+     <a class="searchtag" href=""> <div>Search</div></a>
+          <a class="contacttag" href="signin.html"><div>contact</div></a>
+      <div>Add Cart</div>
+  </div>
+    <div id="homediv">
+      <a class="all" href="mainpage.html"> <p>Home</p></a>
+      <p>Showing 1-12 of 33 results</p>
+    </div>
+
+    <div id="allfruits">
+      <div>
+        <img
+          height="100%"
+          width="100%"
+          src="https://cdn.shopify.com/s/files/1/0449/5225/6667/products/cherry-imported-2A_360x.jpg?v=1629455322"
+          alt=""
+        />
+        <div class="textalign1">
+          <p>Kimaye Cheries</p>
+          <h2>₹ 359 - ₹ 1,399</h2>
+        </div>
+      </div>
+      <div>
+        <img
+        height="100%"
+        width="100%"
+        src="https://cdn.shopify.com/s/files/1/0449/5225/6667/products/Copy_of_ThaiGuava_Isolated_360x.png?v=1639203167"
+       
+        alt=""
+      />
+      <div class="overlay">Add To Cart</div>
+      <div class="textalign1">
+        <p>Kimaye Cheries</p>
+        <h2>₹ 359 - ₹ 1,399</h2>
+      </div>
+      </div>
+      <div>
+        <img
+        height="100%"
+        width="100%"
+        src="https://cdn.shopify.com/s/files/1/0449/5225/6667/products/Malawi-Mangoes_360x.jpg?v=1637664256"
+        alt=""
+      />
+      <div class="textalign1">
+        <p>Kimaye Cheries</p>
+        <h2>₹ 359 - ₹ 1,399</h2>
+      </div>
+      </div>
+      <div>
+        <img
+        height="100%"
+        width="100%"
+        src="https://cdn.shopify.com/s/files/1/0449/5225/6667/products/c54118d4-fe2a-4805-aa25-777c029932ee_360x.png?v=1614327346"
+        alt=""
+      />
+      <div class="textalign1">
+        <p>Kimaye Cheries</p>
+        <h2>₹ 359 - ₹ 1,399</h2>
+      </div>
+      </div>
+      <div>
+        <img
+        height="100%"
+        width="100%"
+        src="https://cdn.shopify.com/s/files/1/0449/5225/6667/products/5c874170-4b51-4c5c-839d-57f4177e3034-min_360x.png?v=1614324976"
+        alt=""
+      />
+      <div class="textalign1">
+        <p>Kimaye Cheries</p>
+        <h2>₹ 359 - ₹ 1,399</h2>
+      </div>
+      </div>
+      <div>
+        <img
+        height="100%"
+        width="100%"
+        src="https://cdn.shopify.com/s/files/1/0449/5225/6667/products/Avocado_360x.jpg?v=1622045722"
+        alt=""
+      />
+      <div class="textalign1">
+        <p>Kimaye Cheries</p>
+        <h2>₹ 359 - ₹ 1,399</h2>
+      </div>
+      </div>
+      <div>
+        <img
+        height="100%"
+        width="100%"
+        src="https://cdn.shopify.com/s/files/1/0449/5225/6667/products/a0cfceb5-76a4-4994-9d37-978c6dc3b309_360x.png?v=1611811512"
+        alt=""
+      />
+      <div class="textalign1">
+        <p>Kimaye Cheries</p>
+        <h2>₹ 359 - ₹ 1,399</h2>
+      </div>
+      </div>
+      <div>
+        <img
+        height="100%"
+        width="100%"
+        src="https://cdn.shopify.com/s/files/1/0449/5225/6667/products/Nagpuri-santra-cover_dfe991ef-cd37-45a4-94f7-b3225779ab6f_360x.jpg?v=1634627098"
+        alt=""
+      />
+      <div class="textalign1">
+        <p>Kimaye Cheries</p>
+        <h2>₹ 359 - ₹ 1,399</h2>
+      </div>
+      </div>
+      <div>
+        <img
+        height="100%"
+        width="100%"
+        src="https://cdn.shopify.com/s/files/1/0449/5225/6667/products/Picture3_360x.jpg?v=1636633326"
+        alt=""
+      />
+      <div class="textalign1">
+        <p>Kimaye Cheries</p>
+        <h2>₹ 359 - ₹ 1,399</h2>
+      </div>
+      </div>
+      <div>
+        <img
+        height="100%"
+        width="100%"
+        src="https://cdn.shopify.com/s/files/1/0449/5225/6667/products/Copy_of_ThaiGuava_Isolated_360x.png?v=1639203167"
+        alt=""
+      />
+      <div class="textalign1">
+        <p>Kimaye Cheries</p>
+        <h2>₹ 359 - ₹ 1,399</h2>
+      </div>
+      </div>
+      <div>
+        <img
+        height="100%"
+        width="100%"
+        src="https://cdn.shopify.com/s/files/1/0449/5225/6667/products/dragon-fruit--white-cover_360x.jpg?v=1632470660"
+        alt=""
+      />
+      <div class="textalign1">
+        <p>Kimaye Cheries</p>
+        <h2>₹ 359 - ₹ 1,399</h2>
+      </div>
+      </div>
+      <div>
+        <img
+        height="100%"
+        width="100%"
+        src="https://cdn.shopify.com/s/files/1/0449/5225/6667/products/d109e625-23d6-49b2-ad4f-433ac292cece_360x.png?v=1613364161"
+        alt=""
+      />
+      <div class="textalign1">
+        <p>Kimaye Cheries</p>
+        <h2>₹ 359 - ₹ 1,399</h2>
+      </div>
+      </div>
+      <div>
+        <img
+        height="100%"
+        width="100%"
+        src="https://cdn.shopify.com/s/files/1/0449/5225/6667/products/5e8b2ee6-ce8e-42e9-959f-d43c544f586a_360x.png?v=1616326949"
+        alt=""
+      />
+      <div class="textalign1">
+        <p>Kimaye Cheries</p>
+        <h2>₹ 359 - ₹ 1,399</h2>
+      </div>
+      </div>
+      <div>
+        <img
+        height="100%"
+        width="100%"
+        src="https://cdn.shopify.com/s/files/1/0449/5225/6667/products/golden-kiwi-cover_360x.jpg?v=1625147312"
+        alt=""
+      />
+      <div class="textalign1">
+        <p>Kimaye Cheries</p>
+        <h2>₹ 359 - ₹ 1,399</h2>
+      </div>
+      </div>
+      <div>
+        <img
+        height="100%"
+        width="100%"
+        src="https://cdn.shopify.com/s/files/1/0449/5225/6667/products/Papaya-cover_360x.jpg?v=1638875170"
+        alt=""
+      />
+      <div class="textalign1">
+        <p>Kimaye Cheries</p>
+        <h2>₹ 359 - ₹ 1,399</h2>
+      </div>
+      </div>
+      <div>
+        <img
+        height="100%"
+        width="100%"
+        src="https://cdn.shopify.com/s/files/1/0449/5225/6667/products/Pear-Beauty_360x.jpg?v=1626686136"
+        alt=""
+      />
+      <div class="textalign1">
+        <p>Kimaye Cheries</p>
+        <h2>₹ 359 - ₹ 1,399</h2>
+      </div>
+      </div>
+      <div>
+        <img
+        height="100%"
+        width="100%"
+        src="https://cdn.shopify.com/s/files/1/0449/5225/6667/products/1_6875ada8-f1e6-4589-b1fd-6f13a86b8ddb-min_360x.jpg?v=1614326164"
+        alt=""
+      />
+      <div class="textalign1">
+        <p>Kimaye Cheries</p>
+        <h2>₹ 359 - ₹ 1,399</h2>
+      </div>
+      </div>
+      <div>
+        <img
+        height="100%"
+        width="100%"
+        src="https://cdn.shopify.com/s/files/1/0449/5225/6667/products/221f2788-1a08-45ae-bdaf-7432d7ea0156_360x.png?v=1614326590"
+        alt=""
+      />
+      <div class="textalign1">
+        <p>Kimaye Cheries</p>
+        <h2>₹ 359 - ₹ 1,399</h2>
+      </div>
+      </div>
+      <div>
+        <img
+        height="100%"
+        width="100%"
+        src="https://cdn.shopify.com/s/files/1/0449/5225/6667/products/1_3311b3de-1a38-4175-8e8c-ac9577ec85df-min_360x.jpg?v=1614324760"
+        alt=""
+      />
+      <div class="textalign1">
+        <p>Kimaye Cheries</p>
+        <h2>₹ 359 - ₹ 1,399</h2>
+      </div>
+      </div>
+      <div>
+        <img
+        height="100%"
+        width="100%"
+        src="https://cdn.shopify.com/s/files/1/0449/5225/6667/products/bd07b8e7-3643-4a98-996e-c85fd7d133a8_360x.png?v=1614765886"
+        alt=""
+      />
+      <div class="textalign1">
+        <p>Kimaye Cheries</p>
+        <h2>₹ 359 - ₹ 1,399</h2>
+      </div>
+      </div>
+      <div>
+        <img
+        height="100%"
+        width="100%"
+        src="https://cdn.shopify.com/s/files/1/0449/5225/6667/products/Mini-Oranges-cover_360x.jpg?v=1631890350"
+        alt=""
+      />
+      <div class="textalign1">
+        <p>Kimaye Cheries</p>
+        <h2>₹ 359 - ₹ 1,399</h2>
+      </div>
+      </div>
+    </div>
+  </div>
+  
+  <div id="frontnav">
+    <a class="all" href="freshcuts.html"> <p>All Friuts</p></a>
+    <a class="all" href="freshcuts.html"> <p>Fresh Cuts</p></a>
+    <a class="all" href="freshcuts.html"> <p>Fruit Combos</p></a>
+    <a class="all" href="freshcuts.html"> <p>Gift By Kimaye</p></a>
+  </div>
+
+  <div id="page21">
+      <div>
+        <img
+        height="100%"
+        width="100%"
+        src="https://cdn.shopify.com/s/files/1/0449/5225/6667/products/Mini-Oranges-cover_360x.jpg?v=1631890350"
+        alt=""
+      />
+      <div class="textalign1">
+        <p>Kimaye Cheries</p>
+        <h2>₹ 359 - ₹ 1,399</h2>
+      </div>
+      </div>
+      <div>
+        <img
+        height="100%"
+        width="100%"
+        src="https://cdn.shopify.com/s/files/1/0449/5225/6667/products/d109e625-23d6-49b2-ad4f-433ac292cece_360x.png?v=1613364161"
+        alt=""
+      />
+      <div class="textalign1">
+        <p>Kimaye Cheries</p>
+        <h2>₹ 359 - ₹ 1,399</h2>
+      </div>
+      </div>
+      <div>
+        <img
+        height="100%"
+        width="100%"
+        src="https://cdn.shopify.com/s/files/1/0449/5225/6667/products/5c874170-4b51-4c5c-839d-57f4177e3034-min_360x.png?v=1614324976"
+        alt=""
+      />
+      <div class="textalign1">
+        <p>Kimaye Cheries</p>
+        <h2>₹ 359 - ₹ 1,399</h2>
+      </div>
+      </div>
+      <div>
+        <img
+        height="100%"
+        width="100%"
+        src="https://cdn.shopify.com/s/files/1/0449/5225/6667/products/Avocado_360x.jpg?v=1622045722"
+        alt=""
+      />
+      <div class="textalign1">
+        <p>Kimaye Cheries</p>
+        <h2>₹ 359 - ₹ 1,399</h2>
+      </div>
+      </div>
+  </div>
+  <div id="lastpage">
+    <div class="followus">
+        <div >
+           <a  class="faq" href=""> <p>FAQ's</p></a>
+           <a class="faq" href=""> <p>Contact Us</p></a>
+            <a class="faq" href=""><p>Shipping & Return Policy</p></a>
+           <a class="faq" href=""> <p>Terms & Conditions</p></a>
+           <a class="faq" href=""> <p>Privacy Policy</p></a>
+        </div>
+        <div>
+            <h4>Follow us on</h4>
+            <a class="sign" href="facebook.com"> <i class="fab fa-facebook-square fa-2x"></i></a>
+            <i class="fab fa-twitter-square fa-2x"></i>
+            <i class="fab fa-instagram-square fa-2x"></i>
+            <i class="fab fa-youtube-square fa-2x"></i>
+        </div>
+    </div>
+    <div class="underline">
+
+    </div>
+    <div>
+        <div class="followus">
+            <div >
+               <p>copyright©2020. All Rights Reserved</p>
+            </div>
+            <div>
+            <img 
+            width="60%"
+           height="50px"
+            src="https://cdn.shopify.com/s/files/1/0449/5225/6667/files/ting.png?v=1599565040" alt="">
+            </div>
+    </div>
+</div>
+
+  </body>
+</html>
+

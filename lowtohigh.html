@@ -1,0 +1,903 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="Addtobag.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@300;400&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Source+Sans+Pro:ital,wght@0,300;0,400;1,300&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/e9bb998391.js" crossorigin="anonymous"></script>
+    <title>Add to Bag</title>
+    <style>
+        body{
+    background-color: #f3f3f3;
+    /* border: 1px solid darkblue; */
+    margin: 0px;
+}
+
+#FirstDiv{
+    width: 100%;
+    height: 30px;
+    border: 1px solid transparent;
+    /* background-color: #ffc4d3; */
+    background-image: url(https://previews.123rf.com/images/efetova/efetova1810/efetova181000146/114432005-golden-sparkles-on-pink-pastel-trendy-background-festive-backdrop-for-your-projects-.jpg);
+    background-size: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: flex-end;
+    /* position: fixed; */
+}
+#FirstDiv > div{
+    height: 80%;
+    width: 8%;
+    margin-top: 2px;
+    /* border: 1px solid black; */
+    border-right: 2px solid black;
+    /* align-items: center; */
+    font-family: 'Source Sans Pro', sans-serif;
+    align-content: center;
+    text-align: center;
+}
+
+
+#SecondDiv{
+    width: 100%;
+    border: 1px solid transparent;
+    background-color: #ffffff;
+    /* position: fixed; */
+    
+}
+#SecondDiv > div{
+    width: 80%;
+    height: 80px;
+    margin: auto;
+    /* border: 1px solid black; */
+    background-color: #ffffff;
+    margin-top: 0.5px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    align-items: center;
+}
+#SecondDiv > div  > div{
+    /* border: 1px solid red; */
+    width: 10%;
+    height: 30%;
+    text-align: center;
+    font-family: 'Source Sans Pro', sans-serif;
+}
+#SecondDiv > div  > div > a{
+    text-align: center;
+    text-decoration: none;
+    color: black;
+    font-weight: 700;
+    
+}
+#ThirdDiv{
+    width: 100%;
+    height: 50px;
+    /* border: 1px solid black; */
+    border-top: 1px solid #878692;
+    background-color: #ffffff;
+}
+#ThirdDiv > div {
+    height: 100%;
+    width: 80%;
+    margin: auto;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    align-items: center;
+}
+#ThirdDiv > div >a{
+    font-weight: bold;
+    color: #878692;
+    text-decoration: none;
+}
+#ThirdDiv > div >a:hover{
+    color: #fc2779;
+    border-bottom: 3px solid #fc2779;
+}
+.SlideShow-Container{
+    width: 100%;
+    height: 400px;
+    /* border: 1px solid red; */
+    margin-top: 2px;
+
+}
+.SlideShow-Container > img{
+    height: 100%;
+    width: 100%;
+
+}
+/* Slideshow container */
+.slideshow-container {
+    width: 100%;
+    height: 400px;
+    border: 1px solid black;
+    margin: auto;
+    position: relative;
+    
+  }
+  
+  /* Hide the images by default */
+  .mySlides {
+    /* display: none; */
+    width: 100%;
+    height: 400px;
+    /* border: 1px solid black; */
+    margin: auto;
+  }
+  
+  /* Next & previous buttons */
+  .prev, .next {
+    cursor: pointer;
+    position: absolute;
+    top: 50%;
+    width: auto;
+    margin-top: -22px;
+    padding: 16px;
+    color: white;
+    font-weight: bold;
+    font-size: 18px;
+    transition: 0.6s ease;
+    border-radius: 0 3px 3px 0;
+    user-select: none;
+  }
+  
+  /* Position the "next button" to the right */
+  .next {
+    right: 0;
+    border-radius: 3px 0 0 3px;
+  }
+  
+  /* On hover, add a black background color with a little bit see-through */
+  .prev:hover, .next:hover {
+    background-color: rgba(0,0,0,0.8);
+  }
+  
+  Caption text */
+  .text {
+    color: #f2f2f2;
+    font-size: 15px;
+    padding: 8px 12px;
+    position: absolute;
+    bottom: 8px;
+    width: 100%;
+    text-align: center;
+  } */
+  
+  /* Number text (1/3 etc) */
+  .numbertext {
+    color: #f2f2f2;
+    font-size: 12px;
+    padding: 8px 12px;
+    position: absolute;
+    top: 0;
+  }
+  
+  /* The dots/bullets/indicators */
+  .dot {
+    cursor: pointer;
+    height: 15px;
+    width: 15px;
+    margin: 0 2px;
+    background-color: #bbb;
+    border-radius: 50%;
+    display: inline-block;
+    transition: background-color 0.6s ease;
+  }
+  
+  .active, .dot:hover {
+    background-color: #717171;
+  }
+  
+  /* Fading animation */
+  .fade {
+    -webkit-animation-name: fade;
+    -webkit-animation-duration: 1.5s;
+    animation-name: fade;
+    animation-duration: 1.5s;
+  }
+  
+  @-webkit-keyframes fade {
+    from {opacity: .4}
+    to {opacity: 1}
+  }
+  
+  @keyframes fade {
+    from {opacity: .4}
+    to {opacity: 1}
+  }
+
+  /* #container {
+     width: 100%;
+     display: flex;
+     flex-wrap: wrap;
+     border: 1px solid red;
+  } */
+  * {
+    box-sizing: border-box;
+  }
+
+  #cont {
+    display: flex;
+    width: 100%;
+    margin-top: 50px;
+    /* height: 2500px; */
+    flex-wrap: wrap;
+    /* border: 1px solid black; */
+    justify-content: space-evenly;
+    background-color: #f3f3f3;
+    row-gap: 20px;
+    column-gap: 10px;
+    font-weight: bold;
+  }
+  #cont > div {
+    /* border: 4px solid green; */
+    /* margin-top: 20px; */
+    text-align: center;
+    /* align-content: center; */
+    /* justify-content: center; */
+    /* position: relative; */
+    height: 350px;
+    width: 20%;
+    /* padding: 1%; */
+    line-height: 15px;
+    background-color: #ffffff;
+    box-shadow: rgba(6, 24, 44, 0.4) 0px 0px 0px 2px, rgba(6, 24, 44, 0.65) 0px 4px 6px -1px, rgba(255, 255, 255, 0.08) 0px 1px 0px inset;
+  }
+  #cont > div > div{
+      height: 60%;
+      width: 100%;
+      /* border: 1px solid blue; */
+  }
+ 
+  #cont > div > div > img { 
+    width: 100%;
+    height: 100%;
+  }
+  #cont > div > button {
+      padding: 3%;
+      width: 60%;
+      background-color: #fc2779;
+      color: whitesmoke;
+      border: none;
+      font-weight: bold;
+      border-radius: 5px;
+      /* margin-left: 0px; */
+  }
+
+
+
+
+
+
+
+
+  .sort {
+    display: flex;
+    /* justify-content: space-evenly; */
+    border-radius: 6px;
+    background: #ffffff;
+    /* background: radial-gradient(circle,
+        rgba(22, 22, 22, 1) 0%,
+        rgba(225, 225, 225, 1) 100%); */
+    /* border: 1px solid blue; */
+    height: 45px;
+  }
+  #nameSort,#priceSort{
+    margin-left: 10px;
+    padding: 10px 40px;
+    border-radius: 10px;
+    font-weight: bold;
+    margin-left: 5px;
+  }
+
+  #nameSort,#priceSort{
+    background-color: #fc2779;
+    color: white;
+    border-radius: 20px;
+    font-weight: bold;
+  }
+  .countbutton{
+      width: 3%;
+      background-color: #fc2779;
+      color: whitesmoke;
+      border: none;
+      font-weight: bold;
+      border-radius: 5px;
+      margin-left: 910px;
+  }
+  .cartcount{
+      width: 7%;
+    background-color: #fc2779;
+    color: whitesmoke;
+    border: none;
+    font-weight: bold;
+    border-radius: 5px;
+    margin-left: 20px;
+  }
+  .cartcount > a{
+      text-decoration: none;
+      color: white;
+  }
+
+
+
+
+
+
+
+  .EXPERIENCEOFMOBILE {
+    height: 150px;
+    width: 100%;
+    background-color: #3f414d;  
+    border: 1px solid transparent;
+    font-family: 'Source Sans Pro', sans-serif;
+}
+.EXPERIENCEOFMOBILE > div {
+    width: 80%;
+    height: 100%;
+    margin: auto;
+    /* border: 1px solid white; */
+    display: grid;
+    grid-template-columns: 33% 30% 33%;
+    grid-template-rows: 100%;
+    justify-content: space-between;
+}
+
+.EXPERIENCEOFMOBILE > div > div > div{
+    border: 1px solid transparent;
+    width: 80%;
+    height: 30%;
+    margin: auto;
+    margin-top: 2%;
+}
+.footertext > p{
+    color: #fff;
+    font-weight: bold;
+    font-size: 14px;
+}
+.footerinput > input {
+    padding: 2%;
+    width: 60%;
+    margin-top: 10px;
+    background-color: transparent;
+    border: none;
+    border-bottom: 2px solid #fff;
+    color: #fff;
+    font-weight: bold;
+}
+.footerinput > input::placeholder{
+    color: #fff;
+}
+.footerinput > button{
+    width: 30%;
+    padding: 2%;
+    background-color: transparent;
+    border: 1px solid #fff;
+    color: #fff;
+    font-weight: bold;
+}
+.footer{
+    height: 400px;
+    width: 100%;
+    background-color: #8c8d94;
+    border: 1px solid transparent;
+    font-family: 'Source Sans Pro', sans-serif;
+}
+.footer > div {
+    width: 80%;
+    height: 80%;
+    margin: auto;
+    margin-top: 2%;
+    /* border: 1px solid red; */
+    display: grid;
+    grid-template-columns:repeat(5, 18%);
+    grid-template-rows: 100%;
+    justify-content: space-between;
+}
+
+.footer > div > div >h2,
+.footer > div > div >h4{
+    color: #ffffff;
+}
+
+.footer > div > div >a{
+    color: #ffffff;
+    line-height: 30px;
+    text-decoration: none;
+    font-size: 14px;
+}
+.footer > div > div >a:hover{
+    color: #fc2779;
+}
+.belowfooter{
+    height: 200px;
+    width: 100%;
+    border: 1px solid transparent;
+    background-color: #f3f3f3;
+}
+.belowfooter > div {
+    height: 100%;
+    width: 80%;
+    margin: auto;
+    /* border: 1px solid red; */
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    font-family: 'Source Sans Pro', sans-serif;
+}
+.trucklogo{
+    height: 70%;
+    width: 18%;
+    /* border: 1px solid black; */
+    margin-left: 5px;
+    display: flex;
+}
+.imgdiv {
+        height: 40%;
+        width: 30%;
+        /* border: 1px solid green;   */
+        border-radius: 50px;  
+}
+.imgdiv > img{
+    height: 100%;
+    width: 100%;
+}
+.imgdivtext{
+    width: 69%;
+    height: 70%;
+    /* border: 1px solid black; */
+    /* margin-left: 5px; */
+}
+.showlove{
+    height: 70%;
+    width: 25%;
+    /* border: 1px solid red; */
+    margin-left: 5px;
+    text-align: start;
+}
+.lastdiv{
+    height: 80px;
+    width: 100%;
+    background-color: #fc2779;
+    border: 1px solid transparent;
+    text-align: center;
+}
+.lastdiv > div {
+    height: 50%;
+    width: 60%;
+    margin: auto;
+    margin-top: 1%;
+    /* border: 1px solid black; */
+}
+.lastdiv > div > a {
+    color: #f7f7f7;
+    font-weight: bolder;
+    text-decoration: none;
+    padding: 3%;
+}
+.lastdiv > div > p{
+    color: #f7f7f7;
+}
+    </style>
+</head>
+<body>
+    <div id="FirstDiv"> 
+        <div> 
+            <i class="fas fa-mobile-alt fa-1x">    Get App   </i> 
+        </div>
+        <div> 
+            <i class="fas fa-map-marker-alt">  Store  </i>
+        </div>
+        <div> 
+            <i class="fas fa-gift"> Gift Card</i>
+        </div>
+        <div style="border-right: 2px solid transparent;"> 
+            <i class="far fa-question-circle"> Help </i>
+        </div>
+
+    </div>
+    <div id="SecondDiv"> 
+        <div>
+           <div style="height: 50%;"> 
+               <img height="100%" width="100%" src="https://cdn.freelogovectors.net/wp-content/uploads/2021/01/nykaa-logo-freelogovectors.net_.png" alt="">
+           </div>
+           <div> 
+               <a href="buy.html"> CATEGORIES </a>
+           </div>
+           <div> 
+            <a href="product.html"> BRANDS </a>
+           </div>
+           <div> 
+               <a href="product.html">NYKAA FASHION</a>
+           </div>
+           <div> 
+               <a href="buy.html">BEAUTY ADVICE</a>
+           </div>
+           <div> 
+               <a href="buy.html">NYKAA NETWORK</a>
+           </div>
+           <input style="width: 20%; height: 50%;" type="text"  placeholder="Search for products brands etc...">
+           <div> 
+               <a href="Signin.html"><i class="fas fa-user-alt">  Account  </i></a>
+            
+           </div>
+        </div>  
+    </div>
+    <div id="ThirdDiv"> 
+    <div>
+        <a href="product.html">Makeup</a>
+        <a href="buy.html">Skin</a>
+        <a href="product.html">Hair</a>
+        <a href="buy.html">Appliances</a>
+        <a href="buy.html">Personal care</a>
+        <a href="product.html">Natural</a>
+        <a href="">Mom & Baby</a>
+        <a href="">Health & Wellness</a>
+        <a href=""> Men</a>
+        <a href="">Fragrance</a>
+        <a href="">LUXE</a>
+    </div>
+    </div>
+    <div class="slideshow-container">
+
+        <!-- Full-width images with number and caption text -->
+        <div class="mySlides fade">
+         
+          <img src="https://images-static.nykaa.com/uploads/40e1e2c1-369a-4f8b-b401-a60a54fc622d.gif" height="100%" width="100%">
+          
+        </div>
+      
+        <div class="mySlides fade">
+          
+          <img src="https://images-static.nykaa.com/uploads/0c8cb4cb-8c20-4730-b02c-d1baa2c0f3fc.jpg"  height="100%" width="100%">
+         
+        </div>
+      
+        <div class="mySlides fade">
+          
+          <img src="https://images-static.nykaa.com/uploads/6c9784e3-2bb3-4801-a77c-f06e28035fe6.jpg"  height="100%" width="100%">
+         
+        </div>
+        <div class="mySlides fade">
+          
+            <img src="https://images-static.nykaa.com/uploads/6c9784e3-2bb3-4801-a77c-f06e28035fe6.jpg"  height="100%" width="100%">
+           
+        </div>
+      
+        <!-- Next and previous buttons -->
+        <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+        <a class="next" onclick="plusSlides(1)">&#10095;</a>
+      </div>
+      <br>
+      
+      <!-- The dots/circles -->
+      <div style="text-align:center">
+        <span class="dot" onclick="currentSlide(1)"></span>
+        <span class="dot" onclick="currentSlide(2)"></span>
+        <span class="dot" onclick="currentSlide(3)"></span>
+      </div>
+    <!-- <div class="sort">
+        <select  name="" id="priceSort" onchange="handlePriceSort()">
+          <option value="">SORT BY PRICE</option>
+          <option value="low">Low to High</option>
+          <option value="high">High to Low</option>
+        </select>
+  
+  
+        <select  name="" id="nameSort" onchange="handleNameSort()">
+          <option value="">SORT BY NAME</option>
+          <option value="asc">Ascending</option>
+          <option value="dsc">Descending</option>
+        </select>
+  
+        <button class="countbutton"> </button>
+        <button class="cartcount"><a href="payment.html">Add to Cart</a></button> 
+      </div> -->
+      <div id="cont"></div>
+      <div class="EXPERIENCEOFMOBILE"> 
+        <div> 
+            <div> 
+                <div class="footertext"> 
+                    <P>GET SPECIAL DISCOUNT IN YOUR INBOX</P>
+                </div>
+                <div class="footerinput"> 
+                    <input type="text" placeholder="Your Email">
+                    <button>SEND</button>
+                </div>
+            </div>
+            <div> 
+               <div class="footertext"> 
+                   <p>EXPERIENCE THE NYKAA MOBILE APP</p>
+               </div>
+               <div> 
+                   <img src="https://www.uboric.com/wp-content/uploads/2020/08/google-play1.png" height="90%" width="80%" alt="">
+               </div>
+            </div>
+            <div> 
+               <div class="footertext"> 
+                   <p>FOR ANY HELP YOU MAY CALL US AT <br>
+                       1800-267-4444</p>
+               </div>
+               <div class="footertext"> 
+                   <p> 
+                       (Monday to Saturday, 8AM to 10PM and Sunday, 10AM to 7PM)
+                   </p>
+               </div>
+            </div>
+        </div>
+   </div>
+   <div class="footer"> 
+       <div> 
+           <div> 
+               <h2 style="font-style: italic;">NKYAA</h2>
+               <a href="">WHO ARE WE?</a>
+               <br/>
+               <a href="">CAREERS</a>
+               <br/>
+               <a href="">AUTHENTICITY</a>
+               <br/>
+               <a href="">PRESS</a>
+               <br/>
+               <a href="">TESTIMONIALS</a>
+               <br/>
+               <a href="">NYKAA CSR</a>
+               <br/>
+               <a href="">RESPONISIBLE DISCLOSURE</a>
+               <br/>
+               <a href="">INVESTOR RELATION</a>
+           </div>
+           <div> 
+               <h4> HELP </h4>
+               <a href=" ">CONTACT US</a>
+               <br/>
+               <a href="">FREQUENTLY ASKED QUESTIONS</a>
+               <br/>
+               <a href="">STORE LOCATOR</a>
+               <br/>
+               <a href="">CANCELLATION AND RETURN</a>
+               <br/>
+               <a href="">SHIPPING AND DELEVERY</a>
+               <br/>
+               <a href="">SELL ON NYKAA</a>
+           </div>
+           <div> 
+               <h4> INSPIRE ME </h4>
+               <a href=" ">BEAUTY BOOK</a>
+               <br/>
+               <a href="">NYKAA TV</a>
+               <br/>
+               <a href="">NYKAA NETWORK</a>
+               <br/>
+               <a href="">BUYING GUIDES</a>
+           </div>
+           <div> 
+               <h4> QUICK LINKS </h4>
+               <a href=" ">OFFER ZONE</a>
+               <br/>
+               <a href="">NEW LAUNCHES</a>
+               <br/>
+               <a href="">NYKAA MAN</a>
+               <br/>
+               <a href="">NYKAA FASHION</a>
+               <br/>
+               <a href="">NYKAA PRO</a>
+               <br/>
+               <a href="">BEAUTY AWARDS WINNERS</a>
+               <br/>
+               <a href="">SITMAP</a>
+           </div>
+           <div style="line-height: 10px;"> 
+               <h4> TOP CATEGORIES </h4>
+               <a href=" ">MAKEUP</a>
+               <br/>
+               <a href="">SKIN</a>
+               <br/>
+               <a href="">HAIR</a>
+               <br/>
+               <a href="">PERSONAL CARE</a>
+               <br/>
+               <a href="">APPLIANCE</a>
+               <br/>
+               <a href="">MOM AND BABY</a>
+               <br/>
+               <a href="">WELLNESS</a>
+               <br/>
+               <a href="">FRAGRANCE</a>
+               <br/>
+               <a href=""> LUXE </a>
+           </div>
+       </div>
+   </div>
+   <div class="belowfooter"> 
+       <div> 
+           <div class="trucklogo"> 
+               <div class="imgdiv"> 
+                   <img src="https://adn-static2.nykaa.com/media/wysiwyg/2021/Free-shipping.svg" alt="">
+               </div>
+               <div class="imgdivtext"> 
+                   <p style="margin-top: 0px; font-weight: bold;">FREE SHIPPING</p>
+                   <hr>
+                   <p style="margin-top: 0px; color:#194655;">for orders above INR 499</p>
+               </div>
+           </div>
+           <div class="trucklogo">
+               <div class="imgdiv"> 
+                   <img src="https://adn-static2.nykaa.com/media/wysiwyg/2021/return_accepted.svg" alt="">
+               </div>
+               <div class="imgdivtext"> 
+                   <p style="margin-top: 0px; font-weight: bold;">EASY RETURN</p>
+                   <hr>
+                   <p style="margin-top: 0px; color:#194655;">15 DAYS return for most products</p>
+               </div>
+           </div>
+           <div class="trucklogo"> 
+               <div class="imgdiv"> 
+                   <img src="https://adn-static2.nykaa.com/media/wysiwyg/2021/Authenticity.svg" alt="">
+               </div>
+               <div class="imgdivtext"> 
+                   <p style="margin-top: 0px; font-weight: bold;">AUTHENTIC</p>
+                   <hr>
+                   <p style="margin-top: 0px; color:#194655;">source directly from brands</p>
+               </div>
+           </div>
+           <div class="trucklogo"> 
+               <div class="imgdiv"> 
+                   <img src="https://adn-static2.nykaa.com/media/wysiwyg/2021/Brands.svg" alt="">
+               </div>
+               <div class="imgdivtext"> 
+                   <p style="margin-top: 0px; font-weight: bold;">2400+BRANDS</p>
+                   <hr>
+                   <p style="margin-top: 0px; color:#194655;">well culrated 1.9 lakh+product</p>
+               </div>
+           </div>
+           <div class="showlove"> 
+               <P style="font-size: 15px; font-weight: 600; margin-left: 20px;">SHOW US SOME LOVE <i class="fas fa-heart" style="color: #fc2779;"></i> ON SOCIAL MEDIA</P>
+               <!-- <hr> -->
+               <a href="facebook.com"> <i class="fab fa-facebook-square fa-2x" style="margin-left: 50px;"></i></a>
+               <i class="fab fa-twitter-square fa-2x" style="margin-left: 20px;"></i>
+               <i class="fab fa-instagram-square fa-2x" style="margin-left: 20px;"></i>
+               <i class="fab fa-youtube-square fa-2x" style="margin-left: 20px;"></i>
+           </div>
+       </div>
+   </div>
+   <div class="lastdiv"> 
+          <div> 
+              <a href="">TERMS AND CONDITION</a>
+              <a href="">SHIPPING POLICY</a>
+              <a href="">CANCELLATION POLICY</a>
+              <a href="">PRIVACYPOLICY</a>
+              <br>
+              <p>© 2021 Nykaa E-Retail Pvt. Ltd. All Rights Reserved</p>
+          </div>
+   </div>
+     
+</body>
+</html>
+<script>
+   var slideIndex = 1;
+showSlides(slideIndex);
+
+// Next/previous controls
+function plusSlides(n) {
+  showSlides(slideIndex += n);
+}
+
+// Thumbnail image controls
+function currentSlide(n) {
+  showSlides(slideIndex = n);
+}
+
+function showSlides(n) {
+  var i;
+  var slides = document.getElementsByClassName("mySlides");
+  var dots = document.getElementsByClassName("dot");
+  if (n > slides.length) {slideIndex = 1}
+  if (n < 1) {slideIndex = slides.length}
+  for (i = 0; i < slides.length; i++) {
+      slides[i].style.display = "none";
+  }
+  for (i = 0; i < dots.length; i++) {
+      dots[i].className = dots[i].className.replace(" active", "");
+  }
+  slides[slideIndex-1].style.display = "block";
+  dots[slideIndex-1].className += " active";
+}
+
+
+
+
+
+
+
+
+
+    var products = JSON.parse(localStorage.getItem("shoppingItems"));
+    var cart = JSON.parse(localStorage.getItem("cartItems")) || [];
+    console.log(cart.length);
+    document.querySelector("button").textContent = cart.length;
+    displayItem(products);
+  
+    function handlePriceSort() {
+      var selected = document.querySelector("#priceSort").value;
+      console.log(selected);
+      if (selected == "high") {
+        products.sort(function (a, b) {
+          return Number(b.price) - Number(a.price);
+        });
+      }
+      if (selected == "low") {
+        products.sort(function (a, b) {
+          return Number(a.price) - Number(b.price);
+        });
+      }
+      //console.log(products);
+      displayItem(products);
+    }
+  
+    function handleNameSort() {
+      var selected = document.querySelector("#nameSort").value;
+      console.log(selected);
+  
+      if (selected == "asc") {
+        products.sort(function (a, b) {
+          if (a.name > b.name) return 1;
+          if (a.name < b.name) return -1;
+          return 0;
+        });
+      }
+      if (selected == "dsc") {
+        products.sort(function (a, b) {
+          if (a.name > b.name) return -1;
+          if (a.name < b.name) return 1;
+          return 0;
+        });
+      }
+      displayItem(products);
+    }
+  
+    function displayItem(products) {
+      document.querySelector("#cont").textContent = "";
+      products.map(function (elem) {
+        var div = document.createElement("div");
+        var div1 = document.createElement("div")
+        // div1.style.border="1px solid black"
+        div1.style.height="60%"
+        var img = document.createElement("img");
+        img.setAttribute("src", elem.image);
+  
+        var h4 = document.createElement("h4");
+        h4.textContent = elem.name;
+  
+        var price = document.createElement("p");
+        price.textContent = elem.price;
+  
+        var button = document.createElement("button");
+        button.textContent = "Add To Bag";
+        button.addEventListener("click", function () {
+          console.log(elem);
+          addToCart(elem);
+        });
+  
+        div.append(div1, h4, price, button);
+        div1.append(img)
+        document.querySelector("#cont").append(div);
+      });
+    }
+  
+    function addToCart(elem) {
+      console.log(elem);
+      cart.push(elem);
+      localStorage.setItem("cartItems", JSON.stringify(cart));
+    }
+  
+  </script>

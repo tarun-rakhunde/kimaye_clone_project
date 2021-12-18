@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      body{
+  background-image:url(https://cdn.shopify.com/s/files/1/0449/5225/6667/collections/recommended-2-min_570x.jpg?v=1614339080);
+        background-size: 100%;
+      }
+      h1{
+        text-align: center;
+        /* color: #fc2779; */
+        font-family: sans-serif;
+        color: brown;
+      }
+      .Admindiv{
+        height: 340px;
+        width: 20%;
+        margin: auto;
+        /* background-color: #FFFFFF; */
+        /* border: 1px solid black; */
+        /* box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px, rgba(10, 37, 64, 0.35) 0px -2px 6px 0px inset; */
+        /* text-align: center; */
+      }
+      .inputdiv{
+        padding: 4%;
+        margin-top: 10px;
+        width: 90.5%;
+        text-align: center;
+        border-radius: 10px;
+        font-size: 15px;
+      }
+      
+      .selectdiv {
+        padding: 4%;
+        width: 100%;
+        margin-top: 10px;
+        text-align: center;
+        /* color: #fc2779; */
+        border-radius: 10px;
+        font-size: 15px;
+        color: gray;
+      }
+      .inputsubmit {
+        padding: 3%;
+        width: 100%;
+        margin: auto;
+        margin-top: 10px;
+        border-radius: 10px;
+        font-size: 15px;
+        color: gray;
+      }
+      button{
+        width: 100%;
+        margin-top: 10px;
+        padding: 4%;
+        border-radius: 10px;
+        font-size: 15px;
+        color: gray;
+        
+      }
+      button:hover{
+          background-color: black;
+          color: white;
+          font-weight: bold;
+          font-size: 20px;
+      }
+      #submit:hover{
+          background-color: yellow;
+          color: black;
+          font-size: 20px;
+          font-weight: bold;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>ADMIN</h1>
+    <div class="Admindiv">
+    <form id="form">
+      <input id="name" type="text" placeholder="enter name of product" class="inputdiv"/>
+      <input id="price" type="number" placeholder="Enter price" class="inputdiv" />
+      
+      <input id="img" type="text" placeholder="Enter image url" class="inputdiv" />
+      <input id="submit" type="submit" class="inputsubmit" />
+    </form>
+
+    <button>Go to Product page</button>
+    </div>
+  </body>
+</html>
+
+<script>
+  document.querySelector("#form").addEventListener("submit", addItem);
+  var prod = JSON.parse(localStorage.getItem("shoppingItems")) || [];
+  function addItem(event) {
+    event.preventDefault();
+    var name = document.querySelector("#name").value;
+    var price = document.querySelector("#price").value;
+    // var type = document.querySelector("#select").value;
+    var image = document.querySelector("#img").value;
+
+    var prodObj = {
+      name: name,
+      price: price,
+    //   type: type,
+      image: image,
+    };
+    prod.push(prodObj);
+    localStorage.setItem("shoppingItems", JSON.stringify(prod));
+  }
+
+  document.querySelector("button").addEventListener("click", function () {
+     
+    window.location.href = "pactical.html";
+    alert("Thank u")
+  });
+</script>

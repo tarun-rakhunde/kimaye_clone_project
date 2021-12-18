@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <title> </title>
+    <style>
+      body{
+        background-image: url(https://cdn.shopify.com/s/files/1/0449/5225/6667/files/2I8A6078_570x.jpg?v=1631516874);
+        background-size: 100%;
+      }
+      #container {
+        width: 24%;
+        height: 630px;
+        /* border: 1px solid black; */
+        box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+        background-color: white;
+       
+        
+      }
+      #signin {
+        display: flex;
+        width: 100%;
+        height: 80px;
+        /* border: 1px solid red; */
+        justify-content: space-around;
+        background-color: black;
+        color: white;
+      }
+      .ptag1 {
+        padding-top: 20px;
+        text-decoration: none;
+        color: white;
+      }
+      #form1 > div {
+        margin-top: 25px;
+        margin-bottom: 10px;
+        padding-left: 10px;
+      }
+      .input1 {
+        margin-left: 10px;
+        font-size: 20px;
+      }
+      .input2 {
+        margin-left: 10px;
+        font-size: 20px;
+      }
+      .submitlogin {
+        padding: 7px 105px;
+        margin-left: 10px;
+        background-color: white;
+        border: 0px;
+        border: 1px solid black;
+      }
+      .submitlogin:hover {
+        background-color: black;
+        color: white;
+      }
+      #facebook {
+        width: 96%;
+        height: 30px;
+        border: 1px solid blue;
+        margin-top: 20px;
+        /* text-align: center; */
+        padding-bottom: 15px;
+        padding-left: 10px;
+        background-color: #4867aa;
+        color: white;
+      }
+      #google {
+        width: 96%;
+        height: 30px;
+        border: 1px solid red;
+        margin-top: 10px;
+        /* text-align: center; */
+        padding-bottom: 15px;
+        padding-left: 10px;
+        /* text-decoration: none; */
+        background-color: #eb2d06;
+        color: white;
+      }
+      #google1 {
+        text-decoration: none;
+        color: white;
+      }
+      #noaccount{
+          text-align: center;
+          padding-top: 10px;
+      }
+      #submitaccount{
+          padding: 7px 80px;
+          /* padding-left: 10px; */
+          margin-left: 10px;
+          border: 1px solid black;
+          background-color: white;
+          
+      }
+    </style>
+  </head>
+  <body>
+    <div id="container">
+      <div id="signin">
+        <h1>Sign In</h1>
+        <a class="ptag1" href="mainpage.html"><p>Close</p></a>
+      </div>
+      <form id="form1">
+        <div>Email address *</div>
+        <input id="email" class="input1" type="text" />
+        <div>Password</div>
+        <input id="password" class="input2" type="password" />
+        <!-- <div>Lost Your Password</div> -->
+        <br />
+        <br />
+        <br />
+        <br />
+        <input  class="submitlogin" type="submit" value="LOGIN" />
+      </form>
+      <form id="form2">
+        <div id="facebook">
+          <p>Sign in with Facebook</p>
+        </div>
+        <div id="google">
+          <a id="google1" href=""> <p>Sign in with Google</p></a>
+        </div>
+      <div>
+        <div id="noaccount">No account yet?</div>
+        <p>
+          Welcome to Kimaye! Help us with a few details to know you better as
+          you take the journey of enjoying our safe and tasty fruits.
+        </p>
+      </div>
+    <a id="submitaccount1"  href="createaccountpage.html"> <input id="submitaccount" type="submit" value="Create Account" /></a></a>
+      </form>
+    </div>
+  </body>
+</html>
+<script>
+ document.querySelector("#form1").addEventListener("submit", signIN);
+  var regdUsers = JSON.parse(localStorage.getItem("myLocal"));
+  function signIN(event) {
+event.preventDefault();
+
+    var email = document.querySelector("#email").value;
+    var password = document.querySelector("#password").value;
+
+    // console.log(email,password)
+
+    if (email === "admin" && password === "admin") {
+      alert("login Sussesfull")
+      window.location.href = "advanceadmin.html";
+    } else {
+      for (var i = 0; i < regdUsers.length; i++) {
+        if (regdUsers[i].email == email && regdUsers[i].pass== password) {
+          // console.log("registered user");
+          alert("Login sucessfull")
+          window.location.href = "freshcuts.html"
+          break;
+
+
+        }else{
+          alert("Sorry invalid ID")
+          break;
+        }
+      }
+    }
+  }
+</script>
