@@ -12,13 +12,12 @@
 # About this project ⏬
 
 ## Run Locally :-
-``git clone https://github.com/unnati1004/firstcry.git``
+``git clone https://github.com/tarun-rakhunde/kimaye-clone.git``
 
 ## Go to project directory:- 
-`cd first-cry`
+`cd kimaye_clone`
 
-## Presentation :-
-[Demo of project](https://drive.google.com/file/d/1zpSMY2SW8PYOS4i9NioGIY-cnNR78kAE/view?usp=sharing)
+
 
 ## deployment Link:-
 https://optimistic-keller-c1d6ce.netlify.app/
@@ -61,6 +60,6 @@ https://optimistic-keller-c1d6ce.netlify.app/
 
 
 ## Screenshots :- 
-## For more details :- ![frontpage](https://user-images.githubusercontent.com/96103401/158337719-d246069e-bd07-4be7-84e6-b675f776de92.png)
+## For more details :- ![frontpage](https://cdn.shopify.com/s/files/1/0449/5225/6667/files/secret-5_guetzli-min.jpg?v=1622009925)
 
 [Blog]( https://medium.com/@ossalunkhe09/cloning-firstcry-website-cf13071992cf)
