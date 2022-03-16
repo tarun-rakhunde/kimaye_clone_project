@@ -62,4 +62,4 @@ https://optimistic-keller-c1d6ce.netlify.app/
 ## Screenshots :- 
 ## For more details :- ![frontpage](https://cdn.shopify.com/s/files/1/0449/5225/6667/files/secret-5_guetzli-min.jpg?v=1622009925)
 
-[Blog]( https://medium.com/@ossalunkhe09/cloning-firstcry-website-cf13071992cf)
+<!-- [Blog]( https://medium.com/@ossalunkhe09/cloning-firstcry-website-cf13071992cf) -->
