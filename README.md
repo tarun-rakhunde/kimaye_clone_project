@@ -21,15 +21,8 @@
 [Demo of project](https://drive.google.com/file/d/1zpSMY2SW8PYOS4i9NioGIY-cnNR78kAE/view?usp=sharing)
 
 ## deployment Link:-
-https://friendly-goldwasser-04fd7a.netlify.app/index.html
+https://optimistic-keller-c1d6ce.netlify.app/
 
-## Contributers :- 
-- #### [Omkar](https://www.linkedin.com/in/omkar-salunkhe-1ba371228/)
-- #### [Unnati](https://www.linkedin.com/in/unnati-gandhi-122212230/)
-- #### [Vineeth](https://www.linkedin.com/in/vineethevk/)
-- #### [Sumit](https://www.linkedin.com/in/sumit-narwal-77a828138/)
-- #### [Tarun](https://www.linkedin.com/in/tarun-rakhunde-a65aa5228/)
-- #### [Praveen](https://www.linkedin.com/in/praveen-kumar-036005184/)
 
 
 ## Tech Stack :- 
@@ -37,12 +30,10 @@ https://friendly-goldwasser-04fd7a.netlify.app/index.html
 - #### HTML
 - #### CSS 
 - #### JavaScript
-- #### GIT
-- #### Express
-- #### Models
-- #### Views
-- #### Controllers 
-- #### MongoDb
+- #### Localstorage
+
+
+
 
 ## Pages & Features :point_down:
 
@@ -53,8 +44,7 @@ https://friendly-goldwasser-04fd7a.netlify.app/index.html
 - `Product Page`: when user sign in with their respective email id's and  page it will ridirect to products page where user can select or add to cart for further process.
 - `Cart Page`: User can add products to this page or remove products added in the cart.
 - `Checkout Page`: Users can add the delivery addresses.
-- `Payment Page`: Users can add their payment details and also avail for discount using promo codes.
-- `Order Processing Page` : setTimout function is used to emulate original payment flow.
+- `Payment Page`: Users can add their payment details 
 - `Additional Features` : Kept the branding, fonts, colors,styling and favicon and titles consistent throughtout the whole website to tried building atleast mvp of site .Not exact but tried  building same features as in original site.
  
 ## How To Use ✅
@@ -63,8 +53,7 @@ https://friendly-goldwasser-04fd7a.netlify.app/index.html
 - After signup user has to login with same details, otherwise it will show invalid credentials.After login user will be redirected to home page.
 - User can see shop by categories and he /she can clik on any category as per his/her requirement and it will be redirected to particular category page.
 - User can see the products, and clicking on particular product which will be redirected to order page.
-- In order page user can see the details of that particular product and also the add to cart button.After cliking the add to cart button the cart value gets updated which is on top nav bar.
-- If he clicks on cart then he will be redirected to cart page where he can see products which he has added to cart.If he wants to remove any product he can click on remove button which will remove the product. 
+- In order page user can see the details of that particular product and also the add to cart button.
 - Then he will proceed to payment page ,where he has to fill all his personal details for delivering the product.
 - After filling all the details including card details then clik on pay button. It will take some time for payment.
 - After payment has completed successfully then he will be redirected to home page.
