@@ -1,7 +1,7 @@
 
 # kimaye_clone_project
 
-![kimaye_clone_project](https://user-images.githubusercontent.com/96103401/158337065-c1e2e63e-7bcf-41b7-924b-3332eb5606a3.png)
+![kimaye_clone_project](https://cdn.shopify.com/s/files/1/0449/5225/6667/files/secret-5_guetzli-min.jpg?v=1622009925)
 
 
 # Welcome :wave:
