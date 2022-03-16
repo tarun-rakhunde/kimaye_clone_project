@@ -1,17 +1,13 @@
+
 # kimaye_clone_project
-"Grower's of India's finest fruits. Kimaye is a promise of consistently delivering the safest and superior quality fruits. India's first brand to retail fresh fruits in USA. Kimaye aims to empower its farmers by delivering their produce to 35 countries around the globe. Currently available in Mumbai and coming to other cities soon!"
 
-
-# first-cry-Web-Clone
-
-![first-cry](https://user-images.githubusercontent.com/96103401/158337065-c1e2e63e-7bcf-41b7-924b-3332eb5606a3.png)
+![kimaye_clone_project](https://user-images.githubusercontent.com/96103401/158337065-c1e2e63e-7bcf-41b7-924b-3332eb5606a3.png)
 
 
 # Welcome :wave:
 
-### About first-cry:
-
-> FirstCry is an Indian e-commerce company, headquartered in Pune. The company, launched in 2010, initially focused on baby products retailing. In January 2020, the company had over 380 stores across India.FirstCrys opened its first outlet in Srinagar in May 2019.It is into its series E round of financing.
+### About # kimaye_clone:
+"Grower's of India's finest fruits. Kimaye is a promise of consistently delivering the safest and superior quality fruits. India's first brand to retail fresh fruits in USA. Kimaye aims to empower its farmers by delivering their produce to 35 countries around the globe. Currently available in Mumbai and coming to other cities soon!"
 
 # About this project ⏬
 
